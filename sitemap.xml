@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/examples/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/exercises/data/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/examples/notebook/data-exercise-1/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/exercises/mlp/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/exercises/data/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/exercises/perceptron/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/exercises/mlp/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/exercises/vae/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/exercises/perceptron/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/projects/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/exercises/vae/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/projects/classification/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/projects/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/projects/eda/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/projects/classification/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/projects/generative/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
     <url>
-         <loc>https://repo-classes.github.io/ann-dl/projects/eda/</loc>
-         <lastmod>2026-11-08</lastmod>
-    </url>
-    <url>
-         <loc>https://repo-classes.github.io/ann-dl/projects/generative/</loc>
-         <lastmod>2026-11-08</lastmod>
-    </url>
-    <url>
-         <loc>https://repo-classes.github.io/ann-dl/projects/regression/</loc>
-         <lastmod>2026-11-08</lastmod>
-    </url>
-    <url>
-         <loc>https://repo-classes.github.io/ann-dl/template/</loc>
+         <loc>https://marcelo-vta.github.io/NeuralNetworks/projects/regression/</loc>
          <lastmod>2026-11-08</lastmod>
     </url>
 </urlset>
