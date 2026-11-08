@@ -1,18 +1,13 @@
-# --- site (mkdocs) --------------------------------------------------------
-# O MkDocs 2.0 remove o sistema de plugins e quebra todos os plugins abaixo, sem
-# caminho de migração. Sem este limite, o CI de todo aluno quebra no dia do lançamento.
-mkdocs<2
-mkdocs-material
-mkdocs-material-extensions
-mkdocs-minify-plugin
-mkdocs-glightbox
-mkdocs-git-authors-plugin
-mkdocs-git-revision-date-localized-plugin
-mkdocs-jupyter
+# Everything needed to rebuild the site AND re-run every script under docs/exercises/*/code/.
+# The CI workflow installs only requirements-docs.txt, so torch is not pulled on every push.
+-r requirements-docs.txt
 
-# --- notebooks e scripts das entregas -------------------------------------
-ipykernel
-numpy
-pandas
-matplotlib
-scikit-learn
+# --- exercise code ---------------------------------------------------------------
+numpy==2.5.4
+pandas==3.1.1
+matplotlib==3.11.2
+seaborn==0.13.2
+scikit-learn==1.9.1
+scipy==1.18.1
+torch==2.15.0
+torchvision==0.29.2

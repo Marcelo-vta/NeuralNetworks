@@ -3,3 +3,10 @@ env/
 .cache/
 .vscode/
 target/
+__pycache__/
+*.pyc
+# MNIST download: torchvision writes ./data/ at the repo root. Root-anchored on purpose —
+# an unanchored "data/" would also ignore docs/exercises/data/.
+/data/
+# Kaggle Spaceship Titanic CSV: downloaded by each user (competition rules), not committed.
+docs/exercises/data/code/raw/

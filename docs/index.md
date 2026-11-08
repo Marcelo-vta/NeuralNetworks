@@ -1,80 +1,53 @@
-# Redes Neurais Artificiais & Deep Learning
+# Artificial Neural Networks & Deep Learning
 
-???+ info inline end "Edição"
+???+ info inline end "Edition"
 
-    **20XX.X** <!-- TROCAR -->
+    **2026.2**
 
-    [Enunciados :material-open-in-new:](https://insper.github.io/ann-dl/){:target='_blank'}
+    [Course statements :material-open-in-new:](https://insper.github.io/ann-dl/2026.2/){:target='_blank'}
 
-Este site é o **portfólio** das entregas da disciplina. Ele cresce ao longo do semestre:
-cada exercício e cada projeto vira um item de menu, e o repositório que o gera é parte
-da avaliação — o professor lê o site publicado **e** o repositório (Markdown, código e
-histórico do Git).
+This site is the **portfolio** of my deliverables for Insper's *Artificial Neural Networks and
+Deep Learning* course. Each exercise is one menu item; the repository that builds it holds the
+report source, the code as runnable files, and the git history.
 
-## Identificação
+## Identification
 
-Quem responde por este repositório. Os **exercícios são individuais**; a equipe do projeto
-— que pode ser diferente — fica registrada na [página do projeto](projects/index.md).
+The **exercises are individual**; the project team is listed on the [project page](projects/index.md).
 
-| Nome completo | E-mail | GitHub |
-|---------------|--------|--------|
-| | | |
+| Full name | E-mail | GitHub |
+|-----------|--------|--------|
+| *(fill in)* | *(fill in)* | [Marcelo-vta](https://github.com/Marcelo-vta) |
 
-!!! tip "Como usar este template"
+## Deliverables
 
-    Este é um **bloco de notas versionado**: registre o que foi feito, o que falta e as
-    decisões tomadas, commitando a cada avanço. O prazo de uma entrega é o *timestamp do
-    último commit que toca a pasta daquela entrega* — não a hora do formulário nem a da
-    publicação no Pages.
+### Exercises — individual
 
-    Comece por [Como usar este template](template/index.md).
+- [ ] [1. Data](exercises/data/index.md) — synthetic point clouds, non-linearity in 5-D, preprocessing a real dataset
+- [ ] [2. Perceptron](exercises/perceptron/index.md) — a from-scratch perceptron on separable and overlapping data
+- [ ] [3. MLP](exercises/mlp/index.md) — backpropagation by hand and a from-scratch MLP
+- [ ] [4. VAE](exercises/vae/index.md) — a variational autoencoder on MNIST
 
-## Status das entregas
-
-!!! info "Datas, pesos e regras são da sua edição"
-
-    O [overview da edição](https://insper.github.io/ann-dl/){:target='_blank'} traz o
-    calendário, os pesos de cada entrega e as regras de avaliação. Este template não os
-    repete — copie para cá o que a sua turma precisa acompanhar, ou mantenha só o status.
-
-    A lista abaixo é o conjunto usual de entregas; acrescente ou remova itens conforme a
-    sua edição, ajustando também as pastas em `docs/` e a `nav` do `mkdocs.yml`.
-
-### Exercícios — individuais
-
-- [ ] [Data](exercises/data/index.md)
-- [ ] [Perceptron](exercises/perceptron/index.md)
-- [ ] [MLP](exercises/mlp/index.md)
-- [ ] [VAE](exercises/vae/index.md)
-
-### [Projeto](projects/index.md) — em equipe
-
-Um projeto, um dataset, três entregas:
+### [Project](projects/index.md) — team
 
 - [ ] [EDA](projects/eda/index.md)
-- [ ] [Classificação](projects/classification/index.md) **ou** [Regressão](projects/regression/index.md)
-- [ ] [Generativo](projects/generative/index.md)
+- [ ] [Classification](projects/classification/index.md) **or** [Regression](projects/regression/index.md)
+- [ ] [Generative](projects/generative/index.md)
 
-## Checklist antes de cada entrega
+## Re-running the code
 
-- [ ] Repositório **público** e o GitHub Pages construindo sem erro.
-- [ ] Caminho correto: `docs/exercises/<slug>/index.md` (ou `docs/projects/<slug>/index.md`).
-- [ ] *Front matter* com `exercise:` (ou `project:`) e `ai_use:` preenchidos.
-- [ ] Títulos espelhando a estrutura do enunciado (`## Exercise N`, `### A`, `### B`, ...).
-- [ ] Figuras commitadas em `figures/`, numeradas e exibidas no relatório.
-- [ ] Scripts como arquivos reais em `code/`, referenciados via `--8<--`.
-- [ ] Tabela **Results summary** completa, sem linhas em branco.
-- [ ] Último commit anterior ao prazo.
+Every figure and number in the reports is produced by the scripts under
+`docs/exercises/<slug>/code/`. From the repository root:
 
-!!! danger "Escreva para defender"
+``` bash
+python -m venv env
+source env/bin/activate            # Windows: .\env\Scripts\activate
+python -m pip install -r requirements.txt
 
-    As notas da disciplina costumam estar sujeitas a defesa oral, e a nota do projeto, a uma
-    prova sobre o próprio projeto. Escreva relatórios que você consiga sustentar meses
-    depois — o que inclui entender cada linha do código que está no repositório. Confira as
-    regras da sua edição no overview.
+python docs/exercises/data/code/main.py
+python docs/exercises/perceptron/code/main.py
+python docs/exercises/mlp/code/main.py
+python docs/exercises/vae/code/main.py
+```
 
-!!! danger "Uso de IA"
-
-    O campo `ai_use` é **obrigatório** em toda entrega. Colaborar com IA é permitido;
-    não declarar o uso, não. Descreva o que foi gerado, revisado ou depurado com apoio de
-    IA — ou escreva `"none"`.
+All seeds are fixed, so a re-run reproduces the reported numbers. The Data exercise also needs
+the Kaggle *Spaceship Titanic* `train.csv` (see that report for where to put it).

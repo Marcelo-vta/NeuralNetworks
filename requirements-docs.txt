@@ -1,0 +1,12 @@
+# --- site (mkdocs) — this is all the CI needs to build and publish the site ---------
+# MkDocs 2.0 removes the plugin system and breaks every plugin below, with no
+# migration path. Keep the upper bound.
+mkdocs<2
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-minify-plugin
+mkdocs-glightbox
+mkdocs-git-authors-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-jupyter
+ipykernel
