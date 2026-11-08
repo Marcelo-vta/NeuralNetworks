@@ -6,7 +6,7 @@
 #  Passo a passo em docs/template/index.md > Publicação no GitHub Pages.
 # =============================================================================
 site_name: ANN-DL 2026.2 · Deliverables
-site_author: Marcelo-vta                      # TODO: replace with your full name
+site_author: Marcelo Alonso
 site_url: https://marcelo-vta.github.io/NeuralNetworks/
 repo_url: https://github.com/Marcelo-vta/NeuralNetworks/
 repo_name: Marcelo-vta/NeuralNetworks

@@ -16,7 +16,7 @@ The **exercises are individual**; the project team is listed on the [project pag
 
 | Full name | E-mail | GitHub |
 |-----------|--------|--------|
-| *(fill in)* | *(fill in)* | [Marcelo-vta](https://github.com/Marcelo-vta) |
+| Marcelo Alonso | <mrclvtalonso@gmail.com> | [Marcelo-vta](https://github.com/Marcelo-vta) |
 
 ## Deliverables
 
